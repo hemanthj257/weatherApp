@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     });
 })
 
-app.get('/weather', (req, res) => {
+app.post('/weather', (req, res) => {
     if (!req.query.zipcode) {
         return res.send("zipcode is required")
     }
