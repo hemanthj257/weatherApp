@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  color: #333;
+  font-family: 'Roboto', Arial, sans-serif;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 12px;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+.widget {
+  position: relative;
+  margin: 30px auto;
+  height: 430px;
+  width: 340px;
+  background: linear-gradient(to right bottom, #4facfe 0%, #3023ae 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form.textBarButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+  gap: 8px;
+}
+
+form.textBarButton input[type="text"] {
+  flex: 1;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  padding: 0 16px;
+  font-size: 16px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form.textBarButton button[type="submit"] {
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form.textBarButton button[type="submit"]:hover {
+  background: #ffffff;
+  scale: 105%;
+  color: black;
+}
+
+.icon-weatherInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.weatherIcon {
+  font-size: 90px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weatherIcon i {
+  display: block;
+}
+
+.weatherInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.temparature {
+  font-size: 50px;
+  color: white;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.temparature span {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.weatherCondition {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.weatherCondition p {
+  margin: 0;
+  padding: 0;
+}
+
+.place {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: white;
+  font-weight: 400;
+  width: 100%;
+}
+
+.date {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+  width: 100%;
+}
+
+.temparature span, .weatherCondition p, .place p, .date p {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,20 @@
+extends header.pug
+block title
+    title #{title}
+block content
+    h1 #{title}
+    .widget
+        form.textBarButton(action="/weather", method="post")
+            input(type="text", placeholder="Enter your pincode")
+            button(type="submit") Submit
+        .icon-weatherInfo
+            .weatherIcon
+                i 
+            .weatherInfo
+                .temparature
+                    span 
+                .weatherCondition
+                    p 
+        .place 
+        .date 
+
