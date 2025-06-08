@@ -18,11 +18,7 @@ app.get('/', (req, res) => {
     });
 })
 
-<<<<<<< HEAD
 app.get('/weather', (req, res) => {
-=======
-app.post('/weather', (req, res) => {
->>>>>>> c05f7cbd2c8bbb1fe7a3d039f45ffeda9f01901f
     if (!req.query.zipcode) {
         return res.send("zipcode is required")
     }
@@ -44,8 +40,4 @@ app.get('/*splat', (req, res) => {
 
 app.listen(port, '0.0.0.0',  () => {
     console.log("app started at port " + port);
-<<<<<<< HEAD
 })
-=======
-})
->>>>>>> c05f7cbd2c8bbb1fe7a3d039f45ffeda9f01901f
